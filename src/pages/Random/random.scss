@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.random {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+
+  .nextIcon {
+    cursor: pointer;
+
+    & svg {
+      width: 50px;
+      height: 70px;
+      fill: $pale;
+      stroke: $secondary;
+      color: $base;
+      stroke-width: 1px;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    justify-content: flex-start;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .nextIcon svg {
+      width: 300px;
+    }
+  }
+  .picturesContainer {
+    padding: 40px;
+
+    .wrapper {
+      margin: 0px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "./styles/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .routes {
+    height: 6000px;
+
+    &.darkTheme {
+      .nextIcon svg {
+        stroke: $headerPhotoDark;
+        stroke-width: 2px;
+      }
+    }
+  }
+
+  .darkMode {
+    padding-right: 40px;
+  }
+}
+
+.darkTheme {
+  background-color: $tertiary;
+  color: $base;
+
+  .headerPicture,
+  .headerPicture .moreIcon,
+  .footerPicture {
+    background-color: $headerPhotoDark;
+
+    .moreIcon {
+      stroke-width: 1px;
+      color: $base;
+    }
+  }
+}

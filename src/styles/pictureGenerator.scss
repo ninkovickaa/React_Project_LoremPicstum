@@ -1,0 +1,41 @@
+.picturesContainer {
+  width: 90%;
+  margin: 0 5%;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+  padding-bottom: 165px;
+  @media screen and (max-width: 350px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+.notFound {
+  padding: 120px 0;
+}
+
+.bigCenterText,
+.notFound p {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 140%;
+
+  & + div.paginationContainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .picturesContainer {
+    padding-bottom: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .bigCenterText,
+  .notFound p {
+    padding: 200px;
+  }
+}

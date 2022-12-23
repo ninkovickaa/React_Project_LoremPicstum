@@ -1,0 +1,17 @@
+@import "./variables";
+
+.heart {
+  size: 45;
+  width: 55px;
+  stroke-width: 20;
+  stroke: $tertiary;
+  fill: $base;
+  &:hover {
+    fill: $primary;
+    cursor: pointer;
+  }
+}
+
+.liked {
+  fill: $primary;
+}
